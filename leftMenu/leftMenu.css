@@ -1,0 +1,87 @@
+.leftMenu a {
+    text-decoration: none;
+    display: block;
+}
+
+.leftMenu {
+    background: #fff;
+    left: -1000px;
+    position: fixed;
+    top: 50px;
+    display: block;
+    height: 100%;
+    width: 68%;
+    min-width: 140px;
+    max-width: 440px;
+    z-index: 90002;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    position: fixed;
+    overflow: auto;
+}
+
+.leftMenu.menu-open {
+    left: 0;
+}
+
+.leftMenu ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.leftMenu ul li {
+    position: relative;
+    padding: 10px 0 10px 20px;
+    overflow:hidden;
+}
+   
+.leftMenu ul li.hasChild > a:after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.leftMenu ul li.hasChild.open > a:after {
+    content: "-";
+    right: 23px;
+    font-size: 28px;
+    top: -3px;
+}
+
+.f2, .f3 {
+    height: 0;
+    padding-left: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.4s ease;
+    -moz-transition: height 0.4s ease;
+    -webkit-transition: height 0.4s ease;
+    -o-transition: height 0.4s ease;
+}
+
+.menu-dark-backdrop {
+    background: rgba(0,0,0,0);
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom:0;
+    overflow: hidden;
+}
+
+    .menu-dark-backdrop.in {
+        height: 100%;
+        z-index: 90001;
+        background: rgba(0,0,0,0.5);
+    }
