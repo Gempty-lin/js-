@@ -1,10 +1,18 @@
 /*
 * @Author: Administrator
 * @Date:   2018-06-30 11:29:00
-* @Last Modified by:   Administrator
-* @Last Modified time: 2018-07-25 10:32:18
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2019-08-27 09:47:12
 */
 /*
+
+
+// 手机端宽度限制，比例限制
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+// 强制内核
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 百度地图
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4IU3oIAMpZhfWZsMu7xzqBBAf6vMHcoa"></script>
@@ -23,6 +31,8 @@
 	<option value="请选择">选择城市</option>
 </select>
 
+// 对象合并
+Object.assign(opt,from)
 
 
 元素距离页面顶部
