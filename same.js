@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-06-30 11:29:00
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-08-27 09:47:12
+ * @Last Modified time: 2019-11-28 15:16:01
 */
 /*
 
@@ -58,7 +58,22 @@ substring 获取长度 n - m 中的值 //  获得地址
  var arr = document.cookie.split('; ');//转换数组
 });
 
+
 */
+// 获取这个星期 星期一是几号
+function getweek(){
+	const dateOfToday = Date.now()
+	const dayOfToday = (new Date().getDay() + 7 - 1) % 7
+	const daysOfThisWeek = Array.from(new Array(7))
+	.map((_, i) => {
+		const date = new Date(dateOfToday + (i - dayOfToday) * 1000 * 60 * 60 * 24)
+		return date.getFullYear() +
+		'-' +
+		String(date.getMonth() + 1).padStart(2, '0') +
+		'-' +
+		String(date.getDate()).padStart(2, '0')
+	})
+}
 
 function oid(e) {
 	return document.getElementById(e);
