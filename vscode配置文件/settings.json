@@ -1,0 +1,34 @@
+{
+    "beautify.config": "",
+    "beautify.ignore": "",
+    "beautify.language": {
+        "js": {
+          "type": ["javascript", "json"],
+          "filename": [".jshintrc", ".jsbeautifyrc"]
+          // "ext": ["js", "json"]
+          // ^^ to set extensions to be beautified using the javascript beautifier
+        },
+        "css": ["css", "scss"],
+        "html": ["htm", "html","vue"]
+        // ^^ providing just an array sets the VS Code file type
+    },
+    "editor.detectIndentation": false,
+    "editor.tabSize":4,
+    "fileheader.customMade": {
+        "Descripttion":"",
+        "version":"",
+        "Author":"Empty",
+        "Date":"Do not edit",
+        "LastEditors":"Empty",
+        "LastEditTime":"Do not Edit"
+    },
+    "fileheader.configObj": {
+        "autoAdd": true
+    },
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.options.useTabs": true,
+    "files.associations": {
+        "*.js": "javascript"
+    },
+
+}
