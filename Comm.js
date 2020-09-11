@@ -1,3 +1,22 @@
+// 查看网页自定义变量/函数
+(function(){
+    const keys = [];
+    const iframe = document.createElement("iframe");
+    iframe.onload = function(){
+        const iframeKeys = Object.keys(iframe.contentWindow);
+        Object.keys(window).forEach(key=>{
+            if (!(iframeKeys.includes(key))) {
+                keys.push(key);
+            }
+        });
+        console.log(keys);
+    };
+    iframe.src = "about:blank";
+    document.body.appendChild(iframe);
+})();
+
+
+
 // 封装promist请求
 /*
     postData(url,{
