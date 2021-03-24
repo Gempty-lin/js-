@@ -42,7 +42,7 @@ filter: grayscale(100%);
 }
  */
 
-@font-face {font-family: NewsFont;src:""}
+@font-face {font-family: NewsFont;src:""}v
 ul {padding-left: 0px;margin: 0px}
 li {list-style: none}
 body {font-family: "微软雅黑";padding: 0px;margin: 0px}
@@ -61,6 +61,25 @@ input,ul,li,div,a,textarea{outline: none;}
     .px2rem(height, 240);
 }
 
+// 根据屏幕宽度设置font-size:
+// window.onresize = setFontSize;
+// setFontSize();
+// function setFontSize() {
+//     var designWidth = 750;
+//     var windowWidth = document.documentElement.clientWidth;
+//     if (windowWidth > designWidth) {
+//         windowWidth = designWidth;
+//     }
+//     document.documentElement.style.fontSize = 30 * (windowWidth / designWidth) + "px";
+// }
+// scss写法
+// $brower_default_font_size: 30px !default;
+// html{
+//     font-size: $brower_default_font_size;
+// }
+// @function pxTorem($px){
+//     @return $px / $brower_default_font_size * 1rem;
+// }
 @media (max-width: 450px){
 
 	

@@ -45,7 +45,7 @@ filter: grayscale(100%);
   font-family: NewsFont;
   src: "";
 }
-ul {
+v ul {
   padding-left: 0px;
   margin: 0px;
 }
@@ -78,15 +78,3 @@ textarea {
 .container {
   height: 3.2rem;
 }
-
-/* less
-@baseFontSize:75;
-.px2rem(@name, @px){
-    @{name}: @px / @baseFontSize * 1rem;
-}
-
-scss
-$baseFontSize:75;
-@mixin px2rem($name,$px) {
-    #{$name}:$px / $baseFontSize * 1rem;
-} */
