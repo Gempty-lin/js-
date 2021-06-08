@@ -28,6 +28,9 @@ filter: grayscale(100%);
 .address-ul::-webkit-scrollbar{width: 10px;  height: 16px;  background-color: #261d18;} 	  
 定义滚动条轨道 内阴影+圆角
 .address-ul::-webkit-scrollbar-track  {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  border-radius: 0px;  background-color: #F5F5F5;} 
+两侧分布中间预留位置：
+gap  （具体百度使用方法）
+
 */
 /* 
 字体
